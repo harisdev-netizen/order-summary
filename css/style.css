@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-size: 100% 50%;
+    background-image: url(../img/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: rgba(168, 180, 247, 0.466);
+    font-family: 'Roboto';
+}
+
+.card {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 375px;
+    height: auto;
+    font-family: 'Roboto';
+    border-radius: 15px 15px;
+    background: hsl(0, 33%, 99%);
+    box-shadow: 0 15px 5px rgba(95, 94, 94, 0.068);
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: rgba(17, 17, 17, 0.774);
+    margin-top: 25px;
+}
+
+h2 {
+    font-size: 17px;
+} 
+
+p {
+    font-size: 15px;
+}
+
+.btn-blue {
+    background-color: rgba(28, 28, 190, 0.822);
+    padding: 10px 10px;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 15px 5px rgba(20,  20, 20, 0.096);
+}
+
+.btn-blue:hover {
+    background-color: rgba(28, 28, 190, 0.575);
+}
+
+.btn-white {
+    color: rgb(104, 99, 99);
+}
+
+.btn-white:hover {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+.btn-blue,
+.btn-white {
+    text-decoration: none;
+    display: block;
+    margin: 2rem 3rem;
+}
+
+.card-img img{
+    background-size: cover;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(226, 226, 226, 0.185);
+    margin: 2rem 3rem;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.card-body .price-txt {
+    color: gray;
+}
+
+.plan {
+    flex: 1 1 100%;
+    line-height: 1.6;
+    text-align: left;
+    padding-left: 12px;
+}
+
+.price-btn:hover {
+    text-decoration: none;
+    color: rgba(28, 28, 190, 0.781);
+}
+
+.card-content .txt {
+    padding: 0 45px;
+    color: gray;
+    margin-top: 15px;
+    line-height: 1.7;
+}
+
+@media screen and (max-width: 1600px) {
+    h2 {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .card {
+        width: 300px;
+        height: 500px;
+        
+    }
+
+    .card-img {
+        width: 300px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 12px;
+    }
+    p {
+        font-size: 10px;
+    }
+    .btn {
+        font-size: 12px;
+    }
+    .price-btn {
+        font-size: 12px;
+    }
+}
